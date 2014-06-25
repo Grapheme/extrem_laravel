@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot?95744854');
+  src: url('../fonts/fontello.eot?95744854#iefix') format('embedded-opentype'),
+       url('../fonts/fontello.woff?95744854') format('woff'),
+       url('../fonts/fontello.ttf?95744854') format('truetype'),
+       url('../fonts/fontello.svg?95744854#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+.icon {
+  font-family: "fontello";
+}
+
+.icon-left-dir:before { content: '\e800'; } /* '' */
+.icon-right-dir:before { content: '\e801'; } /* '' */
+.icon-vkontakte-rect:before { content: '\e802'; } /* '' */
+.icon-plus:before { content: '\e803'; } /* '' */
+.icon-down-dir:before { content: '\e804'; } /* '' */
+.icon-up-dir:before { content: '\e805'; } /* '' */

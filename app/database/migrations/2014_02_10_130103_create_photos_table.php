@@ -1,0 +1,25 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+
+class CreatePhotosTable extends Migration {
+
+    public $table = 'photos';
+
+	public function up() {
+        if (!Schema::hasTable($this->table)) {
+        	Schema::create($this->table, function(Blueprint $table) {			
+    			$table->increments('id');
+    			$table->string('name');
+    			$table->string('gallery_id');
+    			$table->timestamps();
+    		});
+        }
+	}
+
+	public function down(){
+		Schema::dropIfExists($this->table);
+	}
+
+}
